@@ -36,4 +36,22 @@ Change to aci-course-management-js directory and run :
  
  ## Docker
  
+ ### Requirements 
  
+ Docker installed on system: https://www.docker.com/products/docker-desktop
+ 
+ ### Instructions
+
+ From aci-course-management-js directory run :
+ 
+``` docker-compose build ```
+and then
+``` docker-compose up ```
+ 
+ 
+## Features 
+* GET /courses
+* GET /courses/:id
+* POST /courses
+* PUT /courses/:id
+* DELETE /courses/:id
