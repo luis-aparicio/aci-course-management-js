@@ -1,0 +1,30 @@
+{
+  "name": "aci-course-management",
+  "version": "1.0.0",
+  "description": "Course management REST API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node_modules/.bin/nodemon -e js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisaparicioufl/aci-course-management-js.git"
+  },
+  "author": "Luis Aparicio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisaparicioufl/aci-course-management-js/issues"
+  },
+  "homepage": "https://github.com/luisaparicioufl/aci-course-management-js#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
+  }
+}
