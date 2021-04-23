@@ -23,7 +23,7 @@ https://nodejs.org/en/download/
 * Nodemon 
 
 
-Wraps server to allow continous updates from the local database 
+Wraps server to allow continuous updates from the local database 
 
 Install: 
 ``` npm install -g nodemon ```
