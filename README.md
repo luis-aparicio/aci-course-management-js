@@ -34,11 +34,12 @@ Change to aci-course-management-js directory and run :
  and then 
  ``` nodemon ```
  
- ## Docker
+ ## Docker-compose
  
  ### Requirements 
  
  Docker installed on system: https://www.docker.com/products/docker-desktop
+ Docker-compose latest version required 
  
  ### Instructions
 
