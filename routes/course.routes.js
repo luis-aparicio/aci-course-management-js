@@ -46,7 +46,7 @@ router.post('/', m.checkFieldsPost, async (req, res) => {
 })
 
 /* Update a course */
-router.put('/:id', m.mustBeInteger, m.checkFieldsPost, async (req, res) => {
+router.put('/:id', m.bodyMustHaveInt, m.mustBeInteger, m.checkFieldsPost, async (req, res) => {
     const id = req.params.id
     await course.updateCourseById(id, req.body)
     .then(course => 

@@ -1,18 +1,18 @@
 const fs = require('fs')
 var moment = require('moment');
 
-//Gets new id based on current number of courses
+//Gets new id based on array length
 const getNewId = (array) => {
     console.log("Generating ID...")
     if (array.length > 0) {
-        return array[array.length - 1].id + 1
+        return array.length + 1
     } else {
         return 1
     }
 }
 
 //ISO 8601 / RFC 3339
-const newDate = () => moment().format() + 'Z';
+const newDate = () => moment().format().slice(0,-6) + 'Z';
 
 //Checks that the requested ID can be found in the data
 function mustBeInArray(array, id) {

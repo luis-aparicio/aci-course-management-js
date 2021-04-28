@@ -2,9 +2,21 @@
 function mustBeInteger(req, res, next) {
     console.log("Checking parameter's validity...")
     const id = req.params.id
+    
     if (!Number.isInteger(parseInt(id))) {
+        
         console.log("Bad Input!")
         res.status(400).json({ message: 'Invalid ID... please use a single integer only.' })
+    } else {
+        next()
+    }
+}
+
+function bodyMustHaveInt (req, res, next) { 
+    if(req.body.hasOwnProperty('id') && !Number.isInteger(req.body.id))
+    {
+        console.log("Bad Input!")
+        res.status(400).json({ message: 'Invalid Request ID... please use a integer only.' })
     } else {
         next()
     }
@@ -23,5 +35,6 @@ function checkFieldsPost(req, res, next) {
 }
 module.exports = {
     mustBeInteger,
-    checkFieldsPost
+    checkFieldsPost,
+    bodyMustHaveInt
 }
