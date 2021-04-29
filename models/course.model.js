@@ -45,6 +45,7 @@ function addCourse(newCourse) {
 
 function updateCourseById(id, newCourse) {
     return new Promise((resolve, reject) => {
+        //finds course from given id 
         helper.mustBeInArray(courses, id)
         .then(course => {
             const index = courses.findIndex(p => p.id == course.id)
