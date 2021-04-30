@@ -50,7 +50,7 @@ router.put('/:id', m.mustBeInteger, m.checkFieldsPost, async (req, res) => {
     const id = req.params.id
     await course.updateCourseById(id, req.body)
     .then(course => 
-        res.json({
+        res.status(201).json({
         message: `The course with number ${id} has been updated`,
         content: course ,
     }))
@@ -67,7 +67,7 @@ router.put('/:id', m.mustBeInteger, m.checkFieldsPost, async (req, res) => {
 router.delete('/:id', m.mustBeInteger, async (req, res) => {
     const id = req.params.id
     await course.deleteCourseById(id)
-    .then(course => res.json({
+    .then(course => res.status(204).json({
         message: `The course with number ${id} has been deleted`
     }))
     .catch(err => {
