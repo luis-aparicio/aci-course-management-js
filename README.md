@@ -58,8 +58,7 @@ and then
 * DELETE /courses/:id
 
 ## Testing 
-Change to /test directory and run 
+Run 
 ``` node reset.js ```
 to reset the database and
-``` npm test ``` 
-at anytime to run tests. 
+``` npm test ``` to run tests. 
