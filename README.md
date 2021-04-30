@@ -56,3 +56,10 @@ and then
 * POST /courses
 * PUT /courses/:id
 * DELETE /courses/:id
+
+## Testing 
+Change to /test directory and run 
+``` node reset.js ```
+to reset the database and
+``` npm test ``` 
+at anytime to run tests. 
